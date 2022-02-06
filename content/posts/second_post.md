@@ -41,6 +41,12 @@ draft: false
 
 ### 5. Difference between StringBuilder and StringBuffer
 
+| No. | StringBuffer | StringBuilder |
+|-----|--------------|---------------|
+| 1 | StringBuffer is synchronized i.e. thread safe. It means two threads can't call the methods of StringBuffer simultaneously. | StringBuilder is non-synchronized i.e. not thread safe. It means two threads can call the methods of StringBuilder simultaneously. |
+| 2 | StringBuffer is less efficient than StringBuilder. | StringBuilder is more efficient than StringBuffer. |
+| 3 | StringBuffer was introduced in Java 1.0 | StringBuilder was introduced in Java 1.5 |
+
 ### 6. Can a single .java file contain multiple public classes
 
 Yes, it can. However, there can only be one public top-level class per ```.java``` file, and public top-level classes must have the same name as the source file.
