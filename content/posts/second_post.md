@@ -55,6 +55,12 @@ Yes, it can. However, there can only be one public top-level class per ```.java`
 
 ### 8. What is the difference between equals() and ==
 
+In general, both equals() and “==” operators in Java are used to compare objects to check equality, but here are some of the differences between the two:
+
+1. The main difference between the .equals() method and == operator is that one is a method, and the other is the operator.
+2. We can use == operators for reference comparison (address comparison) and .equals() method for content comparison. In simple words, == checks if both objects point to the same memory location whereas .equals() evaluates to the comparison of values in the objects.
+3. If a class does not override the equals method, then by default, it uses the equals(Object o) method of the closest parent class that has overridden this method.
+
 ### 9. What is polymorphism
 
 ### 10. Java 8, Lambda functions, Metaspace,default and static methods in interfaces, new date-time APIs, improvement in Collections APIs and Concurrency package
