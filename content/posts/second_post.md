@@ -78,6 +78,11 @@ Yes, it can. However, there can only be one public top-level class per ```.java`
 ### 16. the concept of inheritance
 
 ### 17. the difference between list and set
+| | List | Set |
+|-|------|-----|
+| Duplicates | Yes | No |
+| Order | Ordered | Depends on implementation |
+| Position Access | Yes | No |
 
 ### 18. why strings are immutable
 
