@@ -69,6 +69,12 @@ Yes, it can. However, there can only be one public top-level class per ```.java`
 
 ### 15. difference between Collection and Collections
 
+| Collection | Collections |
+|------------|-------------|
+| It is an interface | It is a utility class |
+| It is used to represent a group of individual objects as a single unit | It defines several utility methods that are used to operate on collection |
+| The Collection is an interface that contains a static method since java8. The Interface can also contain abstract and default methods | It contains only static methods |
+
 ### 16. the concept of inheritance
 
 ### 17. the difference between list and set
