@@ -53,6 +53,16 @@ Yes, it can. However, there can only be one public top-level class per ```.java`
 
 ### 7. What is a constructor?
 
+In Java, a constructor is a block of codes similar to the method. It is called when an instance of the class is created. At the time of calling constructor, memory for the object is allocated in the memory.
+
+It is a special type of method which is used to initialize the object.
+
+Every time an object is created using the new() keyword, at least one constructor is called.
+
+It calls a default constructor if there is no constructor available in the class. In such case, Java compiler provides a default constructor by default.
+
+There are two types of constructors in Java: no-arg constructor, and parameterized constructor.
+
 ### 8. What is the difference between equals() and ==
 
 ### 9. What is polymorphism
