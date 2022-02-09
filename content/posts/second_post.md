@@ -107,6 +107,9 @@ With an array, you can explicitly wipe the data after you're done with it. You c
 
 ### 21. What are the things that need to be aware when use Serializable
 
+Implement the Serializable interface when you need to store a copy of the object, send them to another process which runs on the same system or over the network.
+It makes storing and sending objects easy. It has nothing to do with security.
+
 ## Architecture questions
 
 ### 1. How does a microservice architecture work? What are the advantages and disadvantages?
