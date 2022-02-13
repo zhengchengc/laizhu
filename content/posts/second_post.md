@@ -53,6 +53,16 @@ Yes, it can. However, there can only be one public top-level class per ```.java`
 
 ### 7. What is a constructor?
 
+In Java, a constructor is a block of codes similar to the method. It is called when an instance of the class is created. At the time of calling constructor, memory for the object is allocated in the memory.
+
+It is a special type of method which is used to initialize the object.
+
+Every time an object is created using the new() keyword, at least one constructor is called.
+
+It calls a default constructor if there is no constructor available in the class. In such case, Java compiler provides a default constructor by default.
+
+There are two types of constructors in Java: no-arg constructor, and parameterized constructor.
+
 ### 8. What is the difference between equals() and ==
 
 In general, both equals() and “==” operators in Java are used to compare objects to check equality, but here are some of the differences between the two:
@@ -75,19 +85,36 @@ In general, both equals() and “==” operators in Java are used to compare obj
 
 ### 15. difference between Collection and Collections
 
+| Collection | Collections |
+|------------|-------------|
+| It is an interface | It is a utility class |
+| It is used to represent a group of individual objects as a single unit | It defines several utility methods that are used to operate on collection |
+| The Collection is an interface that contains a static method since java8. The Interface can also contain abstract and default methods | It contains only static methods |
+
 ### 16. the concept of inheritance
 
 ### 17. the difference between list and set
+
+| | List | Set |
+|-|------|-----|
+| Duplicates | Yes | No |
+| Order | Ordered | Depends on implementation |
+| Position Access | Yes | No |
 
 ### 18. why strings are immutable
 
 ### 19. why char[] is better than String for passwords
 
+Strings are immutable. That means once you've created the String, if another process can dump memory, there's no way (aside from reflection) you can get rid of the data before garbage collection kicks in.
+
+With an array, you can explicitly wipe the data after you're done with it. You can overwrite the array with anything you like, and the password won't be present anywhere in the system, even before garbage collection.
+
 ### 20. does JVM virtualization impacts performance
 
 ### 21. What are the things that need to be aware when use Serializable
 
-
+Implement the Serializable interface when you need to store a copy of the object, send them to another process which runs on the same system or over the network.
+It makes storing and sending objects easy. It has nothing to do with security.
 
 ## Architecture questions
 
